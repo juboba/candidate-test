@@ -11,7 +11,7 @@ test('Task 1', function() {
 });
 
 test('Task 2', function() {
-  return getNumberList([])
+  return getNumberList()
     .then((list) => {
       expect(countTotal(list)).not.toBeGreaterThan(TOTAL_LIMIT);
     })

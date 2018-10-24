@@ -7,7 +7,9 @@ function getNumber() {
 
       setTimeout(() => {
           if (randomError % 2 === 0) {
-            return reject('{' + randomError + '}')
+            const start = Array.from({ length: randomError }, x => '{').join('')
+            const end = Array.from({ length: randomError }, x => '}').join('')
+            return reject(start + randomError + end)
           }
 
           return resolve(Math.floor(Math.random() * 100))

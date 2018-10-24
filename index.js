@@ -28,8 +28,8 @@ function sumPairs(list) {
  * and use it to continue as you would normally.
  */
 
-function getNumberList(list) {
   // please answer here
+function getNumberList(list = []) {
 }
 
 module.exports = {
